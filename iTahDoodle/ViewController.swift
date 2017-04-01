@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate {
     @IBOutlet weak var itemTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
 
@@ -66,6 +66,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             itemTextField.text = ""
         }
     }
+    
     
     
 }

@@ -46,8 +46,9 @@ class ToDoList: NSObject {
 }
 
 
-extension ToDoList: UITableViewDataSource{
+extension ToDoList: UITableViewDataSource, UITableViewDelegate{
     
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
         let item = items[indexPath.row]
@@ -60,4 +61,13 @@ extension ToDoList: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
+    
+    // swipe to delete in table
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            self.items.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+
 }
