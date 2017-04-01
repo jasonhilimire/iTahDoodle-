@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import Foundation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var itemTextField: UITextField!
     @IBOutlet weak var tableView: UITableView!
 
@@ -17,9 +18,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.itemTextField.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.dataSource = todoList
+        
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,12 +31,33 @@ class ViewController: UIViewController {
     }
 
     @IBAction func addButtonPressed(_ sender: UIButton) {
+        if itemTextField.text == "" {
+        } else {
+        
         guard let todo = itemTextField.text else {
             return
         }
         todoList.add(todo)
         tableView.reloadData()
+        itemTextField.text = ""
+        }
     }
+    
 
+    // dismisses keyboard when you tap outside the textbox
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        self.view.endEditing(true)
+    }
+    
+    // dismisses keyboard when you press return on the keyboard
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        // shut down keyboard associated with textfield being edited
+        
+        textField.resignFirstResponder()
+        
+        return true
+    }
 }
 
