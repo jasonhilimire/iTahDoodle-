@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iTahDoodle/ToDoList.swift"
+            timestampString = "512716302.599203"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "fileURL"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTahDoodle.ToDoList.(items in _BB467422A3CF5868B7C7A4A7A5A632BF).getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "iTahDoodle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonhilimire/CodingTempLocation/iTahDoodle/iTahDoodle/ToDoList.swift"
+                  timestampString = "512716305.268863"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTahDoodle.ToDoList.(items in _BB467422A3CF5868B7C7A4A7A5A632BF).setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "iTahDoodle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonhilimire/CodingTempLocation/iTahDoodle/iTahDoodle/ToDoList.swift"
+                  timestampString = "512716305.272541"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iTahDoodle.ToDoList.init () -&gt; iTahDoodle.ToDoList"
+                  moduleName = "iTahDoodle"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jasonhilimire/CodingTempLocation/iTahDoodle/iTahDoodle/ToDoList.swift"
+                  timestampString = "512716305.279297"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
