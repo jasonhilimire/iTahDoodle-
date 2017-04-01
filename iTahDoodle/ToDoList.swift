@@ -67,6 +67,7 @@ extension ToDoList: UITableViewDataSource, UITableViewDelegate{
             self.items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
             tableView.reloadData()
+            saveItems()
         }
     }
 
