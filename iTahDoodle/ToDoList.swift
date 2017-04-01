@@ -50,11 +50,10 @@ extension ToDoList: UITableViewDataSource, UITableViewDelegate{
     
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell") ?? UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "Cell")
         let item = items[indexPath.row]
-        cell?.textLabel!.text = item
-        
-        return cell!
+        cell.textLabel!.text = item
+        return cell
     }
     
     
@@ -67,6 +66,7 @@ extension ToDoList: UITableViewDataSource, UITableViewDelegate{
         if editingStyle == .delete {
             self.items.remove(at: indexPath.row)
             tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
         }
     }
 
